@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Basic Site</title>
+  </head>
+  <body>
+    <form id="someForm">
+      <input type="text" />
+      <button type="button" id="button-a">button A</button>
+      <button id="button-b">button B</button>
+      <input type="submit" value="submit" />
+    </form>
+    <ol>
+      <li>Focus on the text input</li>
+      <li>Hit the "enter" key</li>
+    </ol>
+    <p>Check the console - you will see a click event on Button B and a submit event on the form.</p>
+    <p>This is because "Button A" has a "type" of "button". Removing that attribute in the source will emit a click event on Button A.</p>
+    <p>The behavior of emitting a click event on a button with type "submit" when you hit enter in a focused text input appears to only happen on the first button element nearest the text input.</p>
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
